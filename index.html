@@ -1,0 +1,117 @@
+<!doctype html>
+<!--
+Name: David Ho
+Date: 02/06/2025
+Purpose: HTML page that displays the game
+-->
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Symbol Snap</title>
+    <link rel = "stylesheet" href = "css/style.css">
+    <script src = "js/main.js"></script>
+</head>
+
+<body>
+
+    <div id = "container"> 
+
+        <!-- Add Intro information about what the game is about and stuff -->
+        <div id = "intro"> 
+            <h1>Welcome to Symbol Snap!</h1>
+            <h2>Everyone's favourite symbol guessing game</h2>
+        
+            <div id = "rules"> 
+                <h3>Rules</h3>
+                <ul> 
+                    <li> You will be presented with a 4x4 grid.</li>
+                    <li>Each tile hides a symbol, your goal is to match each symbol with its respective pair.</li>
+                    <li>Click on two tiles to open them, if they match they will remain open. If not they will close again.</li>
+                    <li>The faster you are the more points you earn, and consecutive matches earn bonus points.</li>
+                    <li>Good luck!</li>
+                    <li><strong>Important:</strong> Wait for the board to refresh after completing a round before quitting to ensure score is saved properly.</li>
+                </ul>
+
+            </div>
+        
+            <div id = "introInp">
+                <input class = "userInp" id = "nameInp" type="text" placeholder = "User Name (12 char max)" autofocus maxlength = "12">
+                <input class = "userInp" id = "ageInp" type="number" placeholder = "Age" min = "1">
+                <input class = "userInp" id = "colourInp" type="color" value = "#FFB6C1">
+
+                <div class = "userInp" > 
+                    <input id = "confirm" type = "checkbox" >
+                    <label id = "confText" for = "confirm" >I agree to the rules</label>     
+                </div>
+
+                <input class = "buttons" id = "submitB" type = "button" value = "Submit">
+            </div>
+
+        </div>
+
+        <!-- Main "meat" of page -->
+        <div id = "content"> 
+            <div id = "header"> 
+                <h1>Symbol Snap</h1>
+            </div>
+        
+            <div id ="scoreDiv" class = "sizing"> 
+                <h1 id = "score">Score: 0</h1>
+            </div>
+
+            <div id = "board" class = "sizing"> 
+
+                <div class = "row"> 
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                </div>
+
+                <div class = "row"> 
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                </div>
+
+                <div class = "row"> 
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                </div>
+
+                <div class = "row"> 
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                    <div class = "tile"></div>
+                </div>
+            
+            </div>
+
+            <div id ="buttonDiv" class = "sizing"> 
+                <input class = "buttons" id = "helpB" type = "button" value ="Help">
+                <input class = "buttons" id = "refreshB" type = "button" value = "Refresh">
+                <input class = "buttons" id = "quitB" type = "button" value = "Quit">
+            </div>
+
+            <div id = "userInfo" class = "sizing"></div>
+        </div>
+
+        <div id = "final" class = "outputField"></div>
+
+        <div id = "leaderboardPage" class = "outputField">
+            <h1>Leaderboard</h1>
+            <ol id = "leaderboard"></ol>
+        </div>
+
+        <div id = "restart"> 
+            <input class = "buttons" id = "restartB" type = "button" value = "Back to input">
+        </div>
+
+    </div>
+</body>
+</html>

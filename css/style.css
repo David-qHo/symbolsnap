@@ -1,0 +1,440 @@
+/* 
+Name: David Ho
+Date: 02/06/2025 
+Purpose: Styles the game HTML file
+ */
+
+*{
+    margin:0;
+    box-sizing:border-box;
+    background-color:#E6E6FA;
+    font-family:Verdana, sans-serif;
+    word-wrap: break-word;
+
+}
+
+body{ 
+    height:100%;
+    width:100%;
+}
+
+#container { 
+    max-width:768px;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+#intro { 
+    text-align: center;
+
+    h1{ 
+        margin-bottom:10px;
+        font-size:35px;
+    }
+
+    h2{
+        margin-bottom:10px;
+    }
+
+    p{ 
+        margin-bottom:10px;
+        font-size:18px;
+    }
+
+}
+
+
+#rules{ 
+    margin-bottom:10px;
+    width:80%;
+    background-color:white;
+    padding:15px;
+
+    border: 2px solid black;
+    border-radius:10px;
+    margin-left:auto;
+    margin-right:auto;
+    
+    h3{ 
+        background-color: white;
+
+    }
+
+    ul{ 
+        background-color: white;
+        text-align:left;
+       
+    }
+    li{ 
+        background-color: white;
+        margin-bottom:2px;
+    }
+    p{ 
+        background-color: white;
+        text-align:left;
+    }
+    strong{ 
+        background-color: white;
+    }
+}
+
+
+label{ 
+    margin:0;
+    margin-top:105px;
+    width:100%;
+    background-color:white; 
+}
+label:hover{ 
+    cursor:pointer;
+}
+
+#content{ 
+    height:100%;
+    width:100%;
+    display:none;
+    flex-direction: column;
+
+}
+
+.sizing{ 
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#header{
+    margin-bottom:10px;
+    text-align: center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#board{ 
+    height:600px;
+    border: 5px solid black;
+    display:flex;
+    flex-direction: column;
+
+} 
+
+.row{
+    width:100%;
+    height:100%;
+    display:flex;
+    background-color:white;
+    
+}
+
+.tile { 
+    text-align: center;
+    height:75%;
+    width:20%;
+    background-color:whitesmoke;
+    color:white;
+    border: 3px solid;
+    border-radius:5px;
+    margin:auto;
+} 
+
+#scoreDiv{ 
+    display:flex;
+    margin-top:10px;
+}
+
+#score { 
+    width: 100%;
+}
+
+#userInfo{ 
+    margin-top:10px;
+}
+
+
+#final {
+    font-size:25px;
+    visibility:hidden;
+    text-align:center;
+    margin-bottom:5px;
+    background-color: white;
+    margin-top:5px;
+    word-wrap: break-word;
+
+    h1{ 
+        background-color: white;
+    }
+    
+    p{ 
+        background-color: white;
+    }
+}
+
+#restart{ 
+    display:none;
+    flex-direction: column;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;   
+}
+
+
+.outputField{ 
+    margin-bottom:5px;
+    width:80%;
+    background-color:white;
+    padding:15px;
+    text-align:left;
+    border: 2px solid black;
+    border-radius:10px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Result page */
+#result { 
+    display:none;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10px;
+    width:80%;
+  
+    background-color: white;
+    text-align:center;
+
+    h1{ 
+        background-color: white;
+    }
+    h3{
+        background-color: white;
+    }
+}
+
+#leaderboardPage{ 
+    display:none;
+    flex-direction: column;
+    text-align: center;
+
+}
+#leaderboardPage h1{
+    background-color: white;
+    margin-bottom:10px;
+
+}
+#leaderboard {
+    background-color: white;
+}
+#leaderboard ul {
+    background-color: white;
+}
+
+#leaderboard li{ 
+    background-color: white;
+}
+
+
+.open { 
+    background-color:white;
+}
+
+.open img { 
+    background-color: white;
+    width:80%;
+    height:85%;
+    margin:auto;
+}
+
+/* Buttons/User Input*/
+
+#confirm{ 
+    cursor:pointer;
+}
+#colourInp{ 
+    cursor:pointer;
+}
+
+.buttons{ 
+    color:white;
+    padding:15px;
+    text-align:center;
+    border: 2px solid black;
+    border-radius:10px;
+
+}
+
+
+#introInp{ 
+    display:flex;
+    flex-direction: column;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+  
+}
+
+#buttonDiv{ 
+    display:flex;
+    margin-top:5px;
+  
+}
+
+#submitB { 
+    background-color: #2E8B57 ;
+}
+
+#submitB:hover{ 
+    background-color:#26734D;
+    cursor:pointer;
+}
+
+#submitB:active{ 
+    background-color: #66CDAA;
+}
+
+#quitB { 
+    width:34%;
+    height:50%;
+    background-color: #c0392b ;
+} 
+
+#quitB:hover{ 
+    background-color:#9b2d1f;
+    cursor:pointer;
+}
+
+#quitB:active{ 
+    background-color: #e74c3c;
+}
+
+
+#refreshB { 
+    width:34%;
+    height:50%;
+    background-color: #3498db ;
+    margin-right:2px;
+}
+
+#refreshB:hover{ 
+    background-color:#2980b9;
+    cursor:pointer;
+}
+
+#refreshB:active{ 
+    background-color: #5dade2;
+}
+
+#helpB { 
+    width:34%;
+    height:50%;
+    background-color: #7F4B8B ;
+    margin-right:2px;
+}
+
+#helpB:hover{ 
+    background-color:#6A3F6A;
+    cursor:pointer;
+}
+
+#helpB:active{ 
+    background-color: #9E6C9F;
+}
+
+
+#restartB { 
+    background-color: #f39c12 ;
+    margin-bottom:5px;
+}
+
+#restartB:hover{ 
+    background-color:#e67e22;
+    cursor:pointer;
+}
+
+#restartB:active{ 
+    background-color: #f4b731;
+}
+
+.userInp{ 
+    margin-bottom:5px;
+    width:100%;
+    background-color:white;
+    padding:15px;
+    text-align:left;
+    border: 2px solid black;
+    border-radius:10px;
+}
+
+.invalidInp::-webkit-input-placeholder{ 
+    color:red;
+}
+
+input[type = "color"]{ 
+
+    min-height:100px;
+}
+
+
+@media (max-width:700px){ 
+    #board{ 
+        width:400px;
+        height:400px;
+        border:3px solid black;
+
+    }
+    .sizing{ 
+        width:400px;
+    }
+    .sizing h1{ 
+        font-size:25px;
+    }
+    #buttonDiv input{
+        padding:12px;
+    }
+  
+}
+
+@media(max-width:480px){ 
+
+    #board{ 
+        width:300px;
+        height:300px;
+    }
+    .sizing{
+        width:300px;
+    }
+    .sizing h1{ 
+        font-size:18px;
+    }
+    #buttonDiv input{
+        font-size:10px;
+        padding:10px;
+    }
+    #final{
+        font-size:22px;
+    }
+  
+}
+
+@media(max-width:350px){ 
+
+    #board{ 
+        width:200px;
+        height:200px;
+    }
+    .sizing{
+        width:200px;
+    }
+    .sizing h1{ 
+        font-size:16px;
+    }
+    #buttonDiv input{
+        padding:5px;
+    }
+    #final{
+        font-size:18px;
+    }
+  
+}
+
+
